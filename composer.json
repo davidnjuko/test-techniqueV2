@@ -11,8 +11,8 @@
         "php": ">=5.3.3",
         "symfony/console": "v2.2.3",
         "zendframework/zendframework": "2.2.*",
-        "doctrine/doctrine-orm-module": "0.7.*"
-
+        "doctrine/doctrine-orm-module": "0.7.*",
+        "ruflin/elastica":              "v0.90.1.0"
     },
     "require-dev": {
         "zendframework/zend-developer-tools": "dev-master",

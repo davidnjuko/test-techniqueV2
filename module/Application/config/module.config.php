@@ -1,4 +1,7 @@
 <?php
+
+namespace Application;
+
 /**
  * Zend Framework (http://framework.zend.com/)
  *
@@ -17,6 +20,16 @@ return array(
                     'defaults' => array(
                         'controller' => 'Application\Controller\Index',
                         'action'     => 'index',
+                    ),
+                ),
+            ),
+            'create-index' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/create-index',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'createIndex',
                     ),
                 ),
             ),
@@ -98,5 +111,22 @@ return array(
             'routes' => array(
             ),
         ),
+    ),
+    'doctrine'        => array(
+        'driver'       => array(
+            'application_driver'        => array(
+                'class' => 'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
+                'cache' => 'array',
+                'paths' => array(
+                    __DIR__ . '/../src/' . __NAMESPACE__ . '/Entity',
+                ),
+
+            ),
+            'orm_default'               => array(
+                'drivers' => array(
+                    'Application\Entity'        => 'application_driver',
+                )
+            )
+        )
     ),
 );

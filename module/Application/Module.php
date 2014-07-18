@@ -36,4 +36,19 @@ class Module
             ),
         );
     }
+
+    public function getServiceConfig()
+    {
+        return array(
+            'invokables'    =>  array(
+                'application.service.user'  =>  'Application\Service\UserService'
+            ),
+            'factories' =>  array(
+                'elastic.client' => function ($sm) {
+                        $elasticaClient = new \Elastica\Client();
+                        return $elasticaClient;
+                }
+            )
+        );
+    }
 }
