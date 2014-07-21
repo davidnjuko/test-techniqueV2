@@ -20,6 +20,9 @@ Informations
 Les dépendances du projet sont gérées avec composer. Sont déjà inclues les dépendances suivant :
 Doctrine Module (https://github.com/doctrine/DoctrineModule)
 Elastica (https://github.com/ruflin/Elastica)
+PHPUnit (http://phpunit.de/)
+
+Pour les tests unitaires, les fichiers de configuration sont prets pour des fichiers dans le dossier : ./module/Application/tests/ApplicationTest
 
 Commandes utiles
 ================
