@@ -9,8 +9,8 @@ test-techniqueV2
 6. Surcharger les sélection d'utilisteur pour utiliser ES au lieu de la base de données
 
 Respecter le PSR-2 (vérification avec codesniffer)
-Ecrire les test unitaire sur au moins les entités de l'application
-Intégrer elasticsearch une fois l'application développée à l'aide du gestionnaire d'évènement de ZF2
+Ecrire les test unitaire sur **au moins les entités** de l'application
+Intégrer elasticsearch une fois l'application développée à l'aide du **gestionnaire d'évènement** de ZF2
 
 Elasticsearch doit être accessible en local sur le port 9200.
 
@@ -23,6 +23,9 @@ Elastica (https://github.com/ruflin/Elastica)
 PHPUnit (http://phpunit.de/)
 
 Pour les tests unitaires, les fichiers de configuration sont prets pour des fichiers dans le dossier : ./module/Application/tests/ApplicationTest
+
+Ce test vous permet de montrer vos **connaissances et compétences avec zend framework 2 & Doctrine (+ elasticsearch)** dans le but d'intégrer une équipe qui développe avec les même technologie.
+
 
 Commandes utiles
 ================
